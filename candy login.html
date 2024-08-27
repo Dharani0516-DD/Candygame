@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Crush Clone</title>
+    <link rel="stylesheet" href="candy.css"> <!-- Link to CSS -->
+</head>
+<body>
+    <!-- Login Form -->
+    <div id="login" class="login-container">
+        <h2>Login to Play</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginError" class="error-message"></p>
+    </div>
+
+    <!-- Game Container (Initially Hidden) -->
+    <div id="game" class="game-container" style="display:none;">
+        <div class="grid"></div>
+        <div class="score-board">
+            <h2>Score: <span id="score">0</span></h2>
+        </div>
+    </div>
+
+    <script src="candy.js"></script> <!-- Link to JavaScript -->
+</body>
+</html>
